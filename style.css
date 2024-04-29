@@ -32,11 +32,9 @@ a{
 .all{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 2rem;
     color: var(--cor-fonte);
 }
-
 
 /* CABEÇALHO/MENU */
 .menu{
@@ -329,7 +327,7 @@ header{
 .contato{
    display: flex;
    align-items: center;
-   gap: 1rem;
+   gap: 2rem;
    background-color: var(--cor-fundo-secundaria);
    height: 49.25rem;
    justify-content: center;
@@ -346,7 +344,7 @@ header{
    font-weight: 700;
    font-size:2rem;
    color: var(--cor-fonte);
-   margin-bottom: 1rem;
+   margin-bottom: 1.5rem;
    margin-top: 0;
 }
 
