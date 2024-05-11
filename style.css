@@ -46,6 +46,12 @@ a{
     margin: 0 10%;
     padding-top: 1% ;
     color: var(--cor-fonte);
+    flex-shrink: 1;
+}
+
+.menu__list__item__contato{
+   display: block;
+   font-size: .88rem;
 }
 
 header{
@@ -54,7 +60,7 @@ header{
 }
 
 .menu__list{
-    display: flex;
+    display: none;
     gap: 1rem;
 }
 
@@ -62,23 +68,27 @@ header{
 .apresentacao{
     margin: 0 10%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
+.apresentacao__img{
+   width: 6.2rem;
+   align-self: flex-start;
+}
 .apresentacao__container{
-    gap: 1.5rem;
-    color: var(--cor-fonte); 
+   gap: 1.5rem;
+   color: var(--cor-fonte); 
 }
 
 .apresentacao__bio{
-    font-size: 3.25rem;
+    font-size: 1.38rem;
     font-weight: 700;
 }
 
 .apresentacao__subsection{
-    font-size: 1.375rem;
+    font-size: .88rem;
     font-weight: 400;
 }
 
@@ -86,22 +96,25 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0;
+    font-size: .88rem;
+    font-weight: 600;
 }
 
 /* SOBRE MIM */
 .sobremim{
     background: var(--cor-fundo-secundaria);
-    padding: 4rem;
+    padding: 1rem;
 }
 .sobremim__box{
     margin: 0 5%;
     padding: .7rem;
-    width: 47rem;
+    width: 22.5rem;
+    
 }
 
  .sobremim__title{
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.38rem;
     color: var(--cor-fonte);
  }
 
@@ -109,15 +122,19 @@ header{
     font-weight: 400;
     font-size: 1rem;
     color: var(--cor-fonte);
+    font-size: .88rem;
  }
 
 /* SKILLS */
  .skills{
     margin: 0 10%;
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+    
  }
 
  .skills__title{
@@ -128,6 +145,7 @@ header{
 
  .skills__list{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
  }
 
@@ -136,7 +154,7 @@ header{
     width: 11rem;
     height: 10.9rem;
     display: flex;
-    flex-wrap: wrap;
+    
     align-items: flex-end;
     gap: .5rem;  
  }
@@ -164,11 +182,13 @@ header{
     font-weight: 700;
     font-size: 2rem;
     color: var(--cor-fonte);
+    
  }
 
  .hobbies__list{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
  }
 
  .hobbies__box{
@@ -198,15 +218,17 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 36.4rem;
+    height: 41.32rem;
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1 1 ;
     overflow: hidden;
-    gap: 1rem;
-    padding-bottom: 10%;
+    
  }
 
  .academic__title{
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.38rem;
     color: var(--cor-fonte);
  }
 
@@ -215,33 +237,37 @@ header{
     display: flex;
     gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
  }
 
  .academic__courses__box{
    background-color: var(--cor-fundo-terciaria);
-   width: 23rem;
-   height: 17.9rem;
+   height: 100%;
+   width: 18.5rem;
+   height: 7.38rem;
+   overflow: hidden;
    }
 
  .academic__courses__list{
    display: flex;
    flex-direction: column;
+   justify-content: space-around;
    gap: .5rem;
    padding-left: 0;
  }
 
  .academic__courses__item__img{
-   padding: 15%;
-   margin-left: 8%;
+   align-self: center;   
  }
 
  .academic__courses__item__title{
     font-weight: 700;
     color: var(--cor-fonte);
     font-size: 1.4rem;
-    width: auto;
+    width: 4rem;
     height: 1.7rem;
     margin: 1% 0;
+    position: absolute;
     
    
  }
@@ -253,6 +279,7 @@ header{
     width: auto;
     height: 1.2rem;
     margin: 2% 0;
+    background: none;
     
    
  }
@@ -432,4 +459,41 @@ header{
 
 .footer__text{
    margin: 0;
+}
+
+@media (min-width: 1000px) {
+   
+   .menu__list{
+      display: flex;
+      gap: 1rem;
+   }
+
+   .menu__list__item__contato{
+      display: none;
+   }
+
+   .apresentacao{
+      display: flex;
+      flex-direction: row-reverse;
+   }
+   .apresentacao__img{width: auto;}
+
+   .apresentacao__container{
+      display: flex;
+      flex-direction:column;
+      gap: 24px;
+   }
+
+   .apresentacao__bio{
+      font-size: 3.25rem;
+      margin-bottom: 0;
+   }
+
+   .apresentacao__subsection{
+      font-size: 1.38rem;
+   }
+
+   .apresentacao__network{
+      font-size: 1rem;
+   }
 }
