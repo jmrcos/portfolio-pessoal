@@ -149,12 +149,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
  }
 
  .skills__box{
     background: var(--cor-fundo-terciaria);
-    width: 11rem;
-    height: 10.9rem;
+    width: 9.8rem;
+    height: 7.4rem;
     display: flex;
     align-items: flex-end;
     gap: .5rem;  
@@ -193,12 +194,13 @@ header{
     gap: 1rem;
     flex-wrap: wrap;
     flex: 1 1;
+    justify-content: center;
  }
 
  .hobbies__box{
     background: var(--cor-fundo-terciaria);
-    width: 11rem;
-    height: 10.90rem;
+    width: 9.8rem;
+    height: 7.4rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
