@@ -8,7 +8,7 @@
     --cor-fonte: #464646;
     --cor-btn-repo: #F5F5F5;
     --cor-btn-demo:#2A7AE4;
-    --cor-fonte-formulário: #A2A2A2;
+    --cor-fonte-placeholder: #A2A2A2;
 }
 
 html{
@@ -107,6 +107,7 @@ header{
 .sobremim{
     background: var(--cor-fundo-secundaria);
     padding: 1rem;
+    flex: 1 1;
 }
 .sobremim__box{
     margin: 0 5%;
@@ -132,11 +133,11 @@ header{
  .skills{
     margin: 0 10%;
     display: flex;
-    flex-wrap: wrap;
     flex: 1 1;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+    flex: 1 1;
     
  }
 
@@ -150,6 +151,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    flex: 1 1;
  }
 
  .skills__box{
@@ -157,7 +159,6 @@ header{
     width: 11rem;
     height: 10.9rem;
     display: flex;
-    
     align-items: flex-end;
     gap: .5rem;  
  }
@@ -179,6 +180,7 @@ header{
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+    flex: 1 1;
  }
 
  .hobbies__title{
@@ -192,6 +194,7 @@ header{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    flex: 1 1;
  }
 
  .hobbies__box{
@@ -221,6 +224,7 @@ header{
    align-items: center;
    background-color: var(--cor-fundo-secundaria);
    gap: 2rem;
+   flex: 1 1;
  }
 
  .academic__title{
@@ -273,9 +277,12 @@ header{
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 1rem;
-   justify-content: center;
-   margin-bottom: 5%;
+   gap: 2rem;
+   flex: 1 1;
+}
+
+.xp :last-child{
+   margin-bottom: 1rem;
 }
 
 .xp__title__section{
@@ -288,16 +295,18 @@ header{
    gap: 1rem;
    align-items: center;
    flex-direction: column;
+   margin-bottom: 5%;
 }
 
 .xp__img{
-   width: 18.5rem;
+   width: 21.5rem;
 }
 
 .xp__info{
    gap: .5rem;
    width: 21.75rem;
    height: 7rem;
+   margin-left: 1rem;
 }
 
 .xp__title{
@@ -327,6 +336,7 @@ header{
 .xp__demo button{
    background: var(--cor-btn-demo);
    padding: 1rem;
+   width: 6rem;
    color: var(--cor-fundo-terciaria);
    border: none;
 }
@@ -335,89 +345,64 @@ header{
 /* CONTATO */
 
 .contato{
-   display: flex;
-   align-items: center;
-   gap: 2rem;
    background-color: var(--cor-fundo-secundaria);
-   height: 49.25rem;
-   justify-content: center;
-   font-family: 'Raleway';
-  
+   display: flex;
+   flex-direction: column;
+   padding: 0 10%;
+   color: var(--cor-fonte);
 }
 
 .contato img{
-   width: auto;
-   height: 40rem;
+   display: none;
 }
 
 .contato__title{
+   margin-bottom: 5%;
+   font-family: 'Raleway';
    font-weight: 700;
-   font-size:2rem;
-   color: var(--cor-fonte);
-   margin-bottom: 1.5rem;
-   margin-top: 0;
-}
+   font-size: 1.4rem;
+}  
 
 .contato__text{
-   color: var(--cor-fonte);
-   font-weight: 500;
-   font-size: 1rem; 
+   margin: 0;
+}  
+
+#contato__paragraph{
+   margin-bottom: 8%;
 }
 
 .formcontato__form {
    display: flex;
    flex-direction: column;
    gap: 1rem;
-   width: auto;
-   margin-top: 3rem;
 }
-
 .formcontato__input{
    height: 3.5rem;
-   width: 41rem;
-   border-radius: .25rem;
+   font-family: 'Raleway';
+   font-weight: 400;
+   color: var(--cor-fonte);
    font-size: 1rem;
-   border: none;
-   border-radius: .5rem;
-}
-
-.formcontato__input::placeholder{
-   color: var(--cor-fonte-formulário);
-   font: 400;
-   font-size: 1rem;
-   padding: 2%;
 
 }
 
 .formcontato__textarea{
-  height: 8.32rem;
-  width: 41rem;
-  color: var(--cor-fonte);
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: 'Raleway';
-  border-radius: .25rem;
-  border: none;
-  resize: none;
-}
-
-.formcontato__textarea::placeholder{
    font-family: 'Raleway';
-   color: var(--cor-fonte-formulário);
-   font-weight: 500;
+   height: 8.4rem;
    font-size: 1rem;
-   padding: 2%;
-}
+   font-weight: 400;
+   color: var(--cor-fonte);
+   resize: none;
+   
+} 
 
 .formcontato__botao{
+   margin-bottom: 5%;
+   height: 2.5rem;
+   width: 9.5rem;
    background: var(--cor-btn-demo);
-   height: 3.2rem;
-   padding: .7rem;
-   font-weight: 600;
-   font-size: .9rem;
-   color: var(--cor-fundo-terciaria);
-   width: 10.32rem;
+   color: white;
    border: none;
+
 }
 
 .footer{
