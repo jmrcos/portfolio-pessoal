@@ -77,7 +77,9 @@ header{
 }
 
 .apresentacao__img{
-   width: 6.2rem;
+   min-width: 6.2rem;
+   width: auto;
+   max-width: 23rem;
    align-self: flex-start;
 }
 .apresentacao__container{
@@ -230,8 +232,9 @@ header{
 
  .academic__title{
    font-size: 1.4rem;
-   font-family: Raleway;
+   font-family: 'Raleway';
    font-weight: 700;
+   padding-top: 5%;
  }
 
  .academic__courses__box{
@@ -241,18 +244,21 @@ header{
 
  .academic__courses__box{
    flex-wrap: wrap; 
+   margin-bottom: 15%;
 }
 
  .academic__courses__list{
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  line-height: 5%;
  }
 
  .academic__courses__box__img{
    background: var(--cor-fundo-terciaria);
    width: 18.5rem;
  }
+
  .academic__courses__item__img{
    width: .5%;
    height: auto;
@@ -289,6 +295,7 @@ header{
 .xp__title__section{
    font-weight: 700;
    font-size: 1.4rem;
+   margin-top: 5%;
 }
 
 .xp__box{
@@ -383,6 +390,7 @@ header{
    font-weight: 400;
    color: var(--cor-fonte);
    font-size: 1rem;
+   border-radius: .3rem;
 
 }
 
@@ -393,6 +401,7 @@ header{
    font-weight: 400;
    color: var(--cor-fonte);
    resize: none;
+   border-radius: .3rem;
    
 } 
 
@@ -430,39 +439,93 @@ header{
    margin: 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
    
+   .apresentacao{
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   .apresentacao__img{
+      width: 9.2rem;
+   }
+
+   .sobremim__box{
+      width: 40rem;
+   }
+   
+   .skills__box{
+      flex-grow: 1;
+   }
+
+   .hobbies__box{
+      flex-grow: 1;
+   }
+
+   .xp__img{
+      width: 44rem;
+   }
+
+   .xp__info{
+      align-self: baseline;
+      margin-left: 0;
+   }
+
+   .contato{
+      padding: 0 5%;
+   }
+}
+
+@media (min-width: 844px) {
+
+   .menu{
+      justify-content: space-between;
+   }
+
    .menu__list{
       display: flex;
-      gap: 1rem;
    }
 
    .menu__list__item__contato{
       display: none;
    }
 
-   .apresentacao{
-      display: flex;
-      flex-direction: row-reverse;
-   }
-   .apresentacao__img{width: auto;}
-
-   .apresentacao__container{
-      display: flex;
-      flex-direction:column;
-      gap: 24px;
+   .apresentacao__img{
+      width: 23rem;
    }
 
    .apresentacao__bio{
-      font-size: 3.25rem;
-      margin-bottom: 0;
+      font-size: 3.3rem;
+
    }
 
    .apresentacao__subsection{
-      font-size: 1.38rem;
+      font-size: 1.4rem;
+      
    }
 
    .apresentacao__network{
+      justify-content:left;
+   }
+
+   .apresentacao__network__item{
+      margin-right: 6.5%;
+   }
+
+   .sobremim{
+      padding-left: 5%;
+   }
+
+   .sobremim__box{
+      width: 46.94rem;
+   }
+
+   .sobremim__title{
+      font-size: 2rem;
+   }
+
+   .sobremim__paragrafo{
       font-size: 1rem;
    }
+   
 }
