@@ -527,5 +527,27 @@ header{
    .sobremim__paragrafo{
       font-size: 1rem;
    }
+
+   .xp__info{
+      margin: 0;
+   }
+   #xp__box__position{
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   .xp__box{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-direction: row;
+   }
+
+   .xp__info{
+      margin-top: 10%;
+   }
    
+   .contato{
+      padding: 0 10%;
+   }
 }
