@@ -188,8 +188,8 @@
                 <h2 class="xp__title">Decodificador de texto</h2>
                 <h3 class="xp__text">Challenge Alura Codificador</h3>
                 <div class="xp__buttons">
-                    <span class="xp__repo"><a href=""><button>Repositório</button></a></span>
-                    <span class="xp__demo"><a href=""><button>Ver Demo</button></a></span>
+                    <span class="xp__repo"><a href="https://github.com/jmrcos/decodificador-de-texto"><button>Repositório</button></a></span>
+                    <span class="xp__demo"><a href="https://jmrcos.github.io/decodificador-de-texto/"><button>Ver Demo</button></a></span>
                 </div>
             </div>
         </div>
@@ -239,12 +239,13 @@
             <p class="contato__text">Quer entrar em contato comigo?</p>
             <p id="contato__paragraph" class="contato__text">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             <form class="formcontato__form">
-                <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                <textarea class="formcontato__textarea" rows="7" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                <button class="formcontato__botao">Enviar mensagem</button>
+                <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required>
+                <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
+                <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
+                <textarea class="formcontato__textarea" rows="7" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button class="formcontato__botao" type="submit" disabled>Enviar mensagem</button>
             </form>
+            <div id="erroMensagem"></div>
         </div>  
     </section>
 

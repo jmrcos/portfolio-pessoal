@@ -77,6 +77,7 @@ header{
 }
 
 .apresentacao__img{
+   display: none;
    min-width: 6.2rem;
    width: auto;
    max-width: 23rem;
@@ -289,7 +290,7 @@ header{
 }
 
 .xp :last-child{
-   margin-bottom: 1rem;
+   margin-bottom: 3rem;
 }
 
 .xp__title__section{
@@ -413,6 +414,14 @@ header{
    color: white;
    border: none;
 
+}
+
+.formcontato__botao:disabled{
+   background-color: gray;
+}
+
+#erroMensaagem{
+   color: red;
 }
 
 .footer{
@@ -548,6 +557,25 @@ header{
    }
    
    .contato{
-      padding: 0 10%;
+      flex-direction: row;
+      gap: 2rem;
+      padding: 10% 10%;
+     
+   }
+
+   .contato img{
+      display: block;
+   }
+
+   .contato__title{
+      font-size: 2rem;
+   }
+
+   .contato__text{ 
+      margin-bottom: .5rem;
+   }
+
+   .formcontato__botao{
+      margin-top: 1rem;
    }
 }
